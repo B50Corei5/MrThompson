@@ -1,0 +1,90 @@
+body, html {
+  height: 100vmax;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.index-text {
+  background-color: rgba(255, 174, 0, 0.6); /* Orange w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 35vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80vw;
+  text-align: center;
+}
+
+.printer-image {
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(0.6vmax);
+  -webkit-filter: blur(0.6vmax);
+  background-attachment: fixed;
+
+}
+.printer-image {
+  background-image: url("images/printer-image.jpg");
+}
+.printer-image-2 {
+  background-image: url("images/canon.jpg");
+  height: 75vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.printer-image-3 {
+  background-image: url("images/printer-image-2.jpg");
+  height: 75vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+nav {
+  overflow: hidden;
+  top: 0vh;
+  z-index: 5;
+  font-weight:bold;
+}
+
+
+nav li {
+  display: inline-block;
+  margin-left: 7vw; 
+  padding-top: 2.3vh;
+  position: relative;
+  float:right;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8vw;
+  margin-top: 0;
+  
+}
+
+
+
+nav a:hover {
+  color: black;
+}
+nav a.active {
+}
+nav a::before {
+  content: '';
+  height: 0.2vmax;
+  background-color: rgb(19, 180, 255);
+  position: absolute;
+  top: 2vh;
+  width: 0%;
+  transition: all ease-in 500ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
