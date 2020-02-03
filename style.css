@@ -45,6 +45,7 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
 .printer-image-4 {
   background-image: url("images/printer.jpg");
   height: 75vh;
